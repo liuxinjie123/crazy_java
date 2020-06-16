@@ -5,7 +5,7 @@ package com.crazy.java003;
  * <br />  Copyright (C) 2020-2030 jack
  * <br /> This program is protected by copyright laws.
  * <br />Program Name: Test Javadoc
- * @Date 2020年6月16日
+ * <br /> 2020年6月16日
  * @author jack
  * @version 1.0
  */
