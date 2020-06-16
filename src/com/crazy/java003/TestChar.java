@@ -14,5 +14,7 @@ public class TestChar {
         System.out.println(zhongIntValue);
         char c = 97;
         System.out.println(c);
+        String str = "沧海月明珠有泪，蓝田日暖玉生烟。";
+        System.out.println(str);
     }
 }
