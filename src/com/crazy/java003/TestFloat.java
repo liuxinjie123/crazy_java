@@ -13,6 +13,5 @@ public class TestFloat {
         System.out.println(6.0 / 0 == 666.0 / 0);
         System.out.println(-8 / 0.0);
         System.out.println(0 / 0);
-
     }
 }
