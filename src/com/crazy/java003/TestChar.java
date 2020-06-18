@@ -16,5 +16,9 @@ public class TestChar {
         System.out.println(c);
         String str = "沧海月明珠有泪，蓝田日暖玉生烟。";
         System.out.println(str);
+        double bigD = Double.POSITIVE_INFINITY;
+        System.out.println(" bigD=" + bigD);
+        float bigF = Float.POSITIVE_INFINITY;
+        System.out.println(" bigF=" + bigF);
     }
 }
