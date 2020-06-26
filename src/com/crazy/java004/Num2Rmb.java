@@ -84,6 +84,10 @@ public class Num2Rmb {
         return result;
     }
 
+    /**
+     * 把数字变为大写字符串
+     * 0-9999 之间
+     */
     public static String num2Str(int num) {
         String result = "";
         // 千位
@@ -125,6 +129,9 @@ public class Num2Rmb {
         return result;
     }
 
+    /**
+     * 0 -9 对应的汉字大写
+     */
     public static String num2ChineseCharacter(int num) {
         switch (num) {
             case 0:
