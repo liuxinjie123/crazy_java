@@ -9,6 +9,11 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Dog implements Serializable {
     /**
+     * static
+     */
+    public static String VERSION = "1.0";
+
+    /**
      * 定义一个 jump 方法
      */
     public void jump() {
