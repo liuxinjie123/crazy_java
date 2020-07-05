@@ -1,6 +1,9 @@
 package com.crazy.java005;
 
 import com.alibaba.fastjson.JSON;
+import com.crazy.java005.bird.Bird;
+import com.crazy.java005.bird.Ostrich;
+import com.crazy.java005.fruit.Apple;
 
 public class Test5 {
     public static void main(String[] args) {
@@ -11,5 +14,9 @@ public class Test5 {
 
         Dog dog = new Dog();
         dog.run();
+
+
+
+
     }
 }
