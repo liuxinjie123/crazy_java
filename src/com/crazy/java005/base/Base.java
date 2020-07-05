@@ -7,7 +7,8 @@ public class Base {
     public Base() {
         test();
     }
-    public void test() {
+//    public void test() {
+    private void test() {
         System.out.println(" 将要被子类重写的方法");
     }
 }
