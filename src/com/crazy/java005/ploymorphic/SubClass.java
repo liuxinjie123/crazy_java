@@ -1,12 +1,14 @@
 package com.crazy.java005.ploymorphic;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 public class SubClass extends BaseClass implements Serializable {
     private String book = "Miracle Your Life.";
     public void test() {
