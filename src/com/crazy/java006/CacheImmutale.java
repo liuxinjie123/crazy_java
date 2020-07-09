@@ -1,5 +1,8 @@
 package com.crazy.java006;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CacheImmutale {
     /**
      * name
@@ -7,6 +10,7 @@ public class CacheImmutale {
     private final String name;
 
     private static CacheImmutale[] cache = new CacheImmutale[10];
+    private static Map<String, CacheImmutale> cacheMap = new HashMap<>();
 
     private static int pos = 0;
 
@@ -37,6 +41,19 @@ public class CacheImmutale {
         }
     }
 
+    /**
+     * cache method
+     * this is a very good method
+     */
+    public static CacheImmutale getVal(String name) {
+        if (null != cacheMap.get(name)) {
+            return cacheMap.get(name);
+        }
+        CacheImmutale cacheImmutale = new CacheImmutale(name);
+        cacheMap.put(name, cacheImmutale);
+        return cacheImmutale;
+    }
+
     public boolean equals(Object obj) {
         if (obj instanceof CacheImmutale) {
             CacheImmutale ci = (CacheImmutale) obj;
@@ -55,5 +72,9 @@ public class CacheImmutale {
         CacheImmutale c1 = CacheImmutale.valueOf("hello");
         CacheImmutale c2 = CacheImmutale.valueOf("hello");
         System.out.println(c1 == c2);
+
+        CacheImmutale c3 = CacheImmutale.getVal("hello");
+        CacheImmutale c4 = CacheImmutale.getVal("hello");
+        System.out.println(c3 == c4);
     }
 }
