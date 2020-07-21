@@ -1,6 +1,4 @@
-package com.crazy.java006.computer;
-
-import com.crazy.java006.lee.Output;
+package com.crazy.java006.lee;
 
 public class Computer {
     private Output output;

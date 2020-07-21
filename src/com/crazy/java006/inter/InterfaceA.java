@@ -1,4 +1,6 @@
 package com.crazy.java006.inter;
 
-public class InterfaceA {
+public interface InterfaceA {
+    int PORT_A = 5;
+    void testA();
 }
