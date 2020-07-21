@@ -1,4 +1,4 @@
-package com.crazy.java006.polymorphism;
+package com.crazy.java006.polymorphism.abstr;
 
 public class Line extends Shape {
     @Override

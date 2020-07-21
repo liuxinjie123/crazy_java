@@ -1,13 +1,13 @@
-package com.crazy.java006.polymorphism;
+package com.crazy.java006.polymorphism.inter;
 
-public class Circle extends Shape {
+public class Circle implements Shape {
     @Override
-    void erase() {
+    public void erase() {
         System.out.println("erase a circle.");
     }
 
     @Override
-    void draw() {
+    public void drew() {
         System.out.println("draw a circle.");
     }
 }
